@@ -1,13 +1,18 @@
-body {
-    height: 100%;
-    margin: 0px;
-}
-
-.loader {
+.loader{
     width: 70px;
     height: 70px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     border-radius: 50%;
     border: 12px solid #f3f3f3;
     border-top: 12px solid #444444;
-    margin: 18% auto;
-}
+    animation: loading 2s linear infinite;
+  }
+  @keyframes loading {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }

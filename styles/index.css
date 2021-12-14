@@ -1,45 +1,72 @@
-.hotels{
-    height: 150px;
-    width: 150px;
-    padding: 4%;
-    border-radius: 25%;
-}
-
-
-.search{
+.modals{
     display: flex;
+    justify-content: space-around;
+  }
+  .modal-body{
+    justify-content: center;
+    align-content: center;
+    align-self: center;
     align-items: center;
-    background: url(https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg);
+  }
+  .modal-body button{
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  .searchbardiv{
+    background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 380px;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relatived;
-
-}
-.hotels-list{
-    margin-left: 15%;
-    margin-right: 15%;
-}
-#search-bar{
     display: flex;
-    margin: 0 auto;
+  }
+  /*Search bar centered*/
+  .searchbardiv input{
     border: 1px solid transparent;
     background-color: #f1f1f1;
-    padding: 10px;
-    font-size: 16px;
     border-radius: 12px;
-    width: 25%;
-
-
-}
-#veiw-more{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: black;
     font-size: 16px;
-
-}
+    padding: 10px;
+    width: 100%;
+    outline: none;
+  }
+  .searchbar{
+    margin: auto;
+  }
+  .images{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4%;
+  }
+  .images img{
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 10px gray;
+  }
+  .image{
+    position: relative;
+    border-radius: 25%;
+  }
+  .imgtext{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+  }
+  .images img:hover{
+    filter: brightness(60%);
+  }
+  .image:hover .imgtext{
+    opacity: 1;
+  }
+  /*View more div centered*/
+  #viewmore{
+    margin: auto;
+    text-align: center;
+    padding-bottom: 2%;
+  }
